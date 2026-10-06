@@ -4,7 +4,7 @@ import ProductCategory from "./ProductCategory";
 export default function ProductTable({nameFilter, stockProducts}: {nameFilter:string, stockProducts: boolean}) {
     
     const filterProduct = dataFruit.filter((fruit)=> {
-        return fruit.name.toLocaleLowerCase().includes(nameFilter.toLocaleLowerCase()) && !stockProducts || fruit.stocked;
+        return fruit.name.toLocaleLowerCase().includes(nameFilter.toLocaleLowerCase()) && (!stockProducts || fruit.stocked);
     })
 
     return (
@@ -17,7 +17,7 @@ export default function ProductTable({nameFilter, stockProducts}: {nameFilter:st
                     </tr>
                 </thead>
                 <tbody>
-                    <ProductCategory listFruits={filterProduct}/>
+                    <ProductCategory listFruits={filterProduct} nameNoExist={nameFilter}/>
                 </tbody>
                 
             </table>

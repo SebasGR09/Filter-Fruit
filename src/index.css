@@ -1,0 +1,50 @@
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 3rem;
+}
+
+.price {
+    font-weight: bolder;
+}
+
+.category{
+    padding: 1rem;
+    font-style: italic;
+    
+}
+
+.fruit{
+    background-color: rgb(241, 181, 181);
+}
+
+.vegetable {
+    background-color: rgb(170, 219, 150);
+}
+
+.input{
+    accent-color: green;
+    margin-top: 1rem;
+}
+
+.inputSearch{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.NoExist{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: red;
+}
+
+.resetBtn{
+    margin-left: 1rem;
+}

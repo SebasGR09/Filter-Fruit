@@ -1,9 +1,9 @@
-export default function Product({nameFruit, price}: {nameFruit:string, price: string}){
+export default function Product({nameFruit, price, stock}: {nameFruit:string, price: string, stock:boolean}){
     return (
         <>
         <tr>
-            <td>{nameFruit}</td>
-            <td>{price}</td>
+            <td className={!stock ? "red name": "name"}>{nameFruit}</td>
+            <td className={!stock ? "red price": "price"}>{price}</td>
         </tr>
             
         </>

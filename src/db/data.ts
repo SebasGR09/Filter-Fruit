@@ -5,5 +5,6 @@ export const dataFruit = [
     {category: "Vegetables", price: "$ 2000", stocked: true, name: "Spinach"},
     {category: "Vegetables", price: "$ 4000", stocked: false, name: "Pumpkin"},
     {category: "Vegetables", price: "$ 1000", stocked: true, name: "Peas"},
+    {category: "Fruits", price: "$ 1000", stocked: false, name: "Banana"},
 
 ]
